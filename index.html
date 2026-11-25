@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090f">
+  <title>mahin.com — Your space, your rules</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <main class="page" id="page">
+    <div class="glow" aria-hidden="true"></div>
+    <header class="topline">
+      <a class="brand" href="#" aria-label="mahin.com home"><span class="brand-mark">M</span> mahin.com</a>
+      <div class="online">YOUR SPACE, YOUR RULES</div>
+    </header>
+
+    <section class="scene" aria-label="mahin.com account access">
+      <div class="intro">
+        <div class="eyebrow"><span>✦</span> A little space that's yours</div>
+        <h1><span class="line">FIND YOUR</span><span class="line accent">PEOPLE</span><span class="line">HERE.</span></h1>
+        <p class="intro-copy">A calmer corner for your people, ideas and favorite things. Pick up right where you left off.</p>
+        <div class="floaties" aria-hidden="true">
+          <div class="orb orb-dot"></div>
+          <div class="orb orb-ring"></div>
+          <div class="orb orb-main"></div>
+          <div class="orb orb-small"></div>
+          <div class="orb orb-glass"></div>
+          <span class="spark">✳</span>
+          <span class="float-label">MOOD: IMMACULATE</span>
+        </div>
+        <div class="vibe-pills" aria-label="A space for your people, ideas, and playlists">
+          <span>✦ YOUR PEOPLE</span><span>♫ YOUR INTERESTS</span><span>↗ YOUR SPACE</span>
+        </div>
+        <div class="community-card" aria-hidden="true">
+          <div class="community-orbit"><i></i><i></i><i></i></div>
+          <div class="community-copy"><b>GOOD ENERGY, ALL AROUND.</b><span>Find your frequency.</span></div>
+          <span class="community-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="auth-stage">
+        <div class="auth-cube" id="authCube">
+          <form class="auth-face login-card" id="loginForm" aria-label="Log in">
+            <div class="auth-tabs" role="group" aria-label="Choose login or sign up">
+              <button class="auth-tab is-active" type="button" data-switch="login" aria-pressed="true">LOG IN</button>
+              <button class="auth-tab" type="button" data-switch="signup" aria-pressed="false">SIGN UP <span>✦</span></button>
+            </div>
+            <div class="card-kicker"><span>YOUR ACCOUNT</span><span class="sparkle">✳</span></div>
+            <h2>Welcome back.</h2>
+            <p class="card-sub">Pick up right where your vibe left off.</p>
+
+            <label class="field">
+              <span class="field-label">Email address</span>
+              <span class="input-wrap">
+                <input id="email" name="email" type="email" placeholder="you@somewhere.com" autocomplete="email" required>
+              </span>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Password</span>
+              <span class="input-wrap">
+                <input class="password-input" id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="current-password" minlength="8" required>
+                <button class="toggle-password" id="togglePassword" type="button" aria-label="Show password" aria-pressed="false">SHOW</button>
+              </span>
+            </label>
+
+            <div class="form-options">
+              <label class="remember"><input type="checkbox" name="remember"> Keep me in</label>
+              <a href="#" data-message="Password recovery needs a connected account.">Forgot password?</a>
+            </div>
+            <button class="submit" type="submit">Let's get you in <span aria-hidden="true">↗</span></button>
+            <p class="notice" id="loginNotice" role="status" aria-live="polite"></p>
+
+            <div class="divider">OR SLIDE IN WITH</div>
+            <div class="socials">
+              <button class="social" type="button" data-provider="Google"><b>G</b> Google</button>
+              <button class="social" type="button" data-provider="Apple"><b>●</b> Apple</button>
+            </div>
+            <p class="signup">New around here? <a href="#signup" data-switch="signup">Create an account</a></p>
+          </form>
+
+          <form class="auth-face signup-card" id="signupForm" aria-label="Create an account" aria-hidden="true" inert>
+            <div class="auth-tabs" role="group" aria-label="Choose login or sign up">
+              <button class="auth-tab" type="button" data-switch="login" aria-pressed="false">LOG IN</button>
+              <button class="auth-tab is-active" type="button" data-switch="signup" aria-pressed="true">SIGN UP <span>✦</span></button>
+            </div>
+            <div class="card-kicker"><span>CREATE ACCOUNT</span><span class="sparkle">✦</span></div>
+            <h2>A fresh start.</h2>
+            <p class="card-sub">Set up your account and settle in.</p>
+
+            <label class="field">
+              <span class="field-label">Your name</span>
+              <span class="input-wrap"><input name="name" type="text" placeholder="What should we call you?" autocomplete="name" required></span>
+            </label>
+            <label class="field">
+              <span class="field-label">Email address</span>
+              <span class="input-wrap"><input name="email" type="email" placeholder="you@somewhere.com" autocomplete="email" required></span>
+            </label>
+            <label class="field">
+              <span class="field-label">Create a password</span>
+              <span class="input-wrap"><input name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required></span>
+            </label>
+            <label class="field">
+              <span class="field-label">Confirm password</span>
+              <span class="input-wrap"><input name="confirmPassword" type="password" placeholder="One more time" autocomplete="new-password" minlength="8" required></span>
+            </label>
+            <label class="terms"><input name="terms" type="checkbox" required> I agree to the <a href="#" data-message="Terms need to be provided by the site owner.">good-vibes rules</a></label>
+            <button class="submit" type="submit">Create my account <span aria-hidden="true">✦</span></button>
+            <p class="notice" id="signupNotice" role="status" aria-live="polite"></p>
+            <p class="signup">Already have an account? <a href="#login" data-switch="login">Log in here</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">Made for your main-character era&nbsp; · &nbsp; mahin.com</div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
